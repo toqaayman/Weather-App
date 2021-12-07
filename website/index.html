@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- start header -->
+    <section class="header">
+      <nav>
+        <h1> Weather Journal </h1>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+      <div class="text-box">
+          <div class="wrapper">
+            <h1>Weather Journal App</h1>
+            <p>
+              This simple programme takes the user's zip code and how they feel about the weather as input and returns the temperature, date, and feeling to them as an output.            </p>
+          </div>
+      </div>
+        
+        <section class="wrapper-two">
+            <div>
+              <div>
+                <div class="mx-auto pb-md-5" style="width: 500px;">
+                  <label for="zip" class="form-label">Enter Zipcode here</label>
+                  <input type="text" class="form-control" id="zip" placeholder="enter zip code here">
+                </div>
+                <div class="mx-auto pb-md-5" style="width: 500px;">
+                  <label for="feelings" class="form-label">How are you feeling today?</label>
+                  <textarea type="text" class="form-control" id="feelings" placeholder="Enter your feelings here" rows="3" cols="50"></textarea>
+                </div>
+                <button id="generate" type="submit" class="hero-btn">Generate</button>
+              </div>
+              <br>
+              <div class="holder entry">
+                <div id="entryHolder">
+                  <div id="date"></div>
+                  <div id="temp"></div>
+                  <div id="content"></div>
+                </div>
+              </div>
+              </div>
+            </div>
+        </section>
+    <section class="footer">
+        <H1>Weather Journal</H1>
+    </section>
+
+
+    <script src="app.js" type="text/javascript" defer></script>
+    </body>
+</html>
