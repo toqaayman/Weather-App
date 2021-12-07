@@ -16,9 +16,9 @@ This will require modifying the `server.js` file and the `website/app.js` file. 
 
 ## Usage
 The following packages are required to run the project:
-1- express
-2- cors
-3- body parser
+- express
+- cors
+- body parser
 ```
 npm install express
 ```
