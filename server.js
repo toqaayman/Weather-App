@@ -20,7 +20,7 @@ app.use(express.static('website'));
 
 // Setup Server
 const port = 8000;
-const server = app.listen(port, () => {console.log(`http://localhost:${port}`)})
+const server = app.listen(port, () => {console.log(`server running on http://localhost:${port}`)})
 
 // GET
 app.get('/ALL', function(request, response) {
